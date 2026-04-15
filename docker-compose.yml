@@ -30,4 +30,4 @@ services:
     volumes:
       - /var/lib/dokploy/n8n_data:/home/node/.n8n
     depends_on:
-      postgres:
+      - postgres
