@@ -27,6 +27,7 @@ services:
       - N8N_PROTOCOL=https
       - NODE_ENV=production
       - WEBHOOK_URL=https://n8n.projectflow.click/
+      - N8N_LOG_LEVEL=debug
     volumes:
       - /var/lib/dokploy/n8n_data:/home/node/.n8n
     depends_on:
